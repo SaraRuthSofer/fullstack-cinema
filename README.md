@@ -37,11 +37,11 @@ FullStack-Cinema/
 ## Getting Started
 1. Clone the repository:
    ```
-   git clone https://github.com/<your-username>/FullStack-Cinema.git
+   git clone https://github.com/SaraRuthSofer/fullstack-cinema.git   
    ```
 2. Install dependencies for both client and server:
    ```
-   cd FullStack-Cinema/client && npm install
+   cd fullstack-cinema/client && npm install
    cd ../server && npm install
    ```
 3. Start the backend server:
@@ -54,10 +54,6 @@ FullStack-Cinema/
    npm run dev
    ```
 5. Open your browser at `http://localhost:5173`
-
-## Screenshots
-![Movies Page](./screenshots/movies-page.png)
-![Subscriptions Page](./screenshots/subscriptions-page.png)
 
 ## Why This Project Stands Out
 - Clean, modular codebase for easy maintenance and scalability
