@@ -1,0 +1,29 @@
+.my-btn {
+  margin-right: 8px;
+  padding: 6px 16px;
+  border-radius: 4px;
+  border: none;
+  background: #ff69b4;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.my-btn:hover {
+  background: #bc0d65;
+}
+.my-btn:disabled {
+  background: #e0e0e0;
+  color: #bc0d65;
+  cursor: not-allowed;
+}
+
+.delete{
+    background: #e91f1f;  
+}
+.delete:hover{
+    background: #d60909;  
+}
+.delete:disabled{
+    background: #d9c2c2;
+     color: #da0a0a; 
+}

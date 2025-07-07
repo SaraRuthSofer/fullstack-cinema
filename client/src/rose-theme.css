@@ -1,0 +1,115 @@
+/* Rose Tones Theme */
+:root {
+  --rose-light: #ffe4ec;
+  --rose-medium: #f8bbd0;
+  --rose: #e75480;
+  --rose-dark: #c2185b;
+  --rose-text: #6d214f;
+  --rose-bg: #fff0f5;
+  --rose-accent: #f06292;
+}
+
+body {
+  background: var(--rose-bg);
+  color: var(--rose-text);
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--rose-dark);
+  margin-bottom: 0.5em;
+}
+
+a, .rose-link {
+  color: var(--rose);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+a:hover, .rose-link:hover {
+  color: var(--rose-dark);
+}
+
+.rose-container {
+  background: var(--rose-light);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px 0 rgba(231,84,128,0.08);
+  padding: 2rem 2.5rem;
+  margin: 2rem auto;
+  max-width: 420px;
+}
+
+.rose-btn, button[type='submit'] {
+  background: linear-gradient(90deg, var(--rose) 60%, var(--rose-accent) 100%);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 0.7em 2em;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1em;
+  box-shadow: 0 2px 8px 0 rgba(231,84,128,0.10);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.rose-btn:hover, button[type='submit']:hover {
+  background: var(--rose-dark);
+  box-shadow: 0 4px 16px 0 rgba(231,84,128,0.18);
+}
+
+input[type='text'], input[type='password'] {
+  width: 50%;
+  padding: 0.7em;
+  margin: 0.5em 0 1em 0;
+  border: 1px solid var(--rose-medium);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--rose-text);
+  font-size: 1em;
+  transition: border 0.2s;
+}
+
+input[type='text']:focus, input[type='password']:focus {
+  border: 1.5px solid var(--rose);
+  outline: none;
+}
+
+.rose-error {
+  color: var(--rose-dark);
+  background: var(--rose-medium);
+  border-radius: 8px;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+.rose-nav {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  margin: 1.5em 0 2em 0;
+}
+
+.rose-nav .rose-link {
+  font-size: 1.1em;
+  padding: 0.3em 1em;
+  border-radius: 8px;
+  background: var(--rose-light);
+  transition: background 0.2s, color 0.2s;
+}
+
+.rose-nav .rose-link:hover {
+  background: var(--rose-accent);
+  color: #fff;
+}
+
+.rose-link-active {
+  background: var(--rose-dark)  !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px 0 rgba(231,84,128,0.13);
+}
